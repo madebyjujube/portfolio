@@ -4,58 +4,81 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="shortcut icon" type="image/x-icon" href="favlogo.svg">
-  <link rel="stylesheet" href="./Document_files/main.css">
+  <link rel="stylesheet" href="./css/main.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
-  <title>Document</title>
+  <title>jujube</title>
+
+  <script defer type="text/javascript" src="./media/script.js"></script>
 </head>
 <body>
-   <!-- CLOSE BTN -->
-  <div class="navbutton exitbutton" onclick="closeAll()">
-    <img src="./Document_files/images/SVG/exit.svg" alt="X shape">
-  </div>
 
-  <!-- ICONS / NAVBAR -->
+  <!-- ICONS / NAVBUTTONS -->
   <span class="navbar">
     <div class="navbutton buttonP" onclick="openPurple()">
-      <img src="./Document_files/images/SVG/juju.svg" alt="wavy-logo">
+      <img src="./media/images/SVG/juju.svg" alt="wavy-logo">
       <p>juju's about</p>
     </div>
+    <div class="navbutton buttonContact" onclick="openContact()">
+      <img src="./media/images/SVG/contact.svg" alt="lines forming of a phone">
+      <p>contact</p>
+    </div>
     <div class="navbutton buttonJujube" onclick="openJujube()">
-      <img src="./Document_files/images/SVG/waves.svg" alt="waves website logo">
+      <img src="./media/images/SVG/waves.svg" alt="waves website logo">
       <p>jujube</p>
     </div>
     <div class="navbutton buttonJujube" onclick="openDesign()">
-      <img src="./Document_files/images/SVG/" alt="waves website logo">
+      <img src="./media/images/SVG/" alt="waves website logo">
       <p>design</p>
     </div>
     <div class="navbutton buttonO" onclick="openOrange()">
-      <img src="./Document_files/images/lissajous.svg" alt="lissajous figure logo">
+      <img src="./media/images/SVG/lissajous.svg" alt="lissajous figure logo">
       <p>lissa typeface</p>
     </div>
-    <div class="navbutton buttonContact" onclick="openContact()">
-      <img src="./Document_files/images/SVG/contact.svg" alt="lines forming of a phone">
-      <p>contact</p>
-    </div>
     <div class="navbutton buttonWave" onclick="openWaves()">
-      <img src="./Document_files/images/SVG/waves.svg" alt="waves website logo">
+      <img src="./media/images/SVG/waves.svg" alt="waves website logo">
       <p>WAVES</p>
     </div>
   </span>
+  
+  <!-- ========== WINDOWS ========== -->
   <!-- JUJUBE WINDOW -->
   <div class="windows jujube">
     <article class="_body">
-      <h1>NmFm event series</h1>
-      <iframe src="https://hybrid.concordia.ca/j_tiema/349Repo/class3/" width="100%" height="500px" title="WAVES webpage"></iframe>
+      <h1>jujube (music)</h1>
       <p>This website was created for an event series called WAVES which took place during the summer of 2021, and which synced with new and full moon cycles. WAVES was mainly a space created for people to harness the therapeutic benefits of sound in a setting specifically for curated for that.</p>
       <p>This is a website that was created for WAVES, an event series that took place during the summer of 2021. WAVES offered a curated space where people could experience the therapeutic benefits of sound. The events were synchronized with new and full moon cycles, enhancing the transformative power of the sound-based encounters.</p>
       <p>During the new moons, WAVES offered ambient shows accompanied by guided meditations. These experiences provided a sanctuary for relaxation and inner reflection.</p>
       <p>On the nights of the full moons, WAVES transformed into a celebration of techno music and dancing. With pulsating rhythms and raw energy, attendees indulged in an exhilarating fusion of music and movement.</p>
     </article>
-    <div class="resizer close" onclick="openWaves()"></div>
-    <div class="resizer wase"></div>
-    <div class="resizer wasw"></div>
+    <div class="resizer close" onclick="openJujube()"></div>
+    <div class="resizer juse"></div>
+    <div class="resizer jusw"></div>
+  </div>
+  <!-- DESIGN WINDOW -->
+  <div class="windows design">
+    <article class="_body">
+      <h1>design works</h1>
+      <p>...</p>
+      <p>...</p>
+    </article>
+    <div class="resizer close" onclick="openDesign()"></div>
+    <div class="resizer dese"></div>
+    <div class="resizer desw"></div>
+  </div>
+  <!-- INTANGIBLE WINDOW -->
+  <div class="windows intangible">
+    <article class="_body">
+      <h1>intangible (website)</h1>
+      <p>...</p>
+      <p>...</p>
+    </article>
+    <div class="resizer close" onclick="openIntangible()"></div>
+    <div class="resizer inse"></div>
+    <div class="resizer insw"></div>
   </div>
   <!-- PURPLE WINDOW -->
   <div class="windows purple">
@@ -74,7 +97,7 @@
   <!-- ORANGE WINDOW -->
   <div class="windows orange">
     <article class="_body">
-      <img src="./Document_files/images/DART280-font1.svg" alt="lissa typeface designed based on lissajous figures">
+      <img src="./media/images/SVG/DART280-font1.svg" alt="lissa typeface designed based on lissajous figures">
     </article>
     <div class="resizer close" onclick="openOrange()"></div>
     <div class="resizer orsw"></div>
@@ -97,7 +120,7 @@
   <div class="windows wwaves">
     <article class="_body">
       <h1>NmFm event series</h1>
-      <iframe src="https://hybrid.concordia.ca/j_tiema/349Repo/class3/" width="100%" height="500px" title="WAVES webpage"></iframe>
+      <iframe src="https://madebyjujube.github.io/WAVES" width="100%" height="500px" title="WAVES webpage"></iframe>
       <p>This website was created for an event series called WAVES which took place during the summer of 2021, and which synced with new and full moon cycles. WAVES was mainly a space created for people to harness the therapeutic benefits of sound in a setting specifically for curated for that.</p>
       <p>This is a website that was created for WAVES, an event series that took place during the summer of 2021. WAVES offered a curated space where people could experience the therapeutic benefits of sound. The events were synchronized with new and full moon cycles, enhancing the transformative power of the sound-based encounters.</p>
       <p>During the new moons, WAVES offered ambient shows accompanied by guided meditations. These experiences provided a sanctuary for relaxation and inner reflection.</p>
@@ -107,7 +130,11 @@
     <div class="resizer wase"></div>
     <div class="resizer wasw"></div>
   </div>
-  <script type="text/javascript" src="./Document_files/script.js"></script>
-  <script src="sketch.js"></script>
+
+  <!-- CLOSE BTN -->
+  <div class="navbutton exitbutton" onclick="closeAll()">
+    <img src="./media/images/SVG/exit.svg" alt="X shape">
+  </div>
+
 </body>
 </html>

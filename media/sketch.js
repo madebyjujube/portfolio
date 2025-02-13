@@ -4,11 +4,12 @@ window.addEventListener("mousemove", drawClient);
 
 function setup() {
     setAttributes(alpha, "true");
-    createCanvas(400, 300, WEBGL);
+    createCanvas(windowWidth, windowHeight, WEBGL);
 }
 function drawClient(e) {
     // ellipse(e.clientX, e.clientY, 10,10)
-    ellipse(mouseX, mouseY, 10,10)
+    ellipse(mouseX - width/2, mouseY - height/2, 10,10)
+    
 }
 function draw(e) {
     noStroke();

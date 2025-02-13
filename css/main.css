@@ -11,7 +11,9 @@
 *::-webkit-scrollbar {
   display: none;
 }
-
+iframe {
+  border: none;
+}
 img {
   pointer-events: none;
 }
@@ -95,16 +97,36 @@ h1 {
   scrollbar-width: none;  /* Firefox */
 }
 
+.jujube {
+  display: none;
+  background: rgb(197, 153, 255);
+  top: 50px;
+  left: 300px;
+  height: 300px; width: 650px;
+}
+.design {
+  display: none;
+  background: rgb(253, 255, 137);
+  top: 300px;
+  left: 300px;
+  height: 500px; width: 450px;
+}
+.intangible {
+  display: none;
+  background: rgb(255, 153, 240);
+  top: 200px;
+  left: 200px;
+  height: 500px; width: 450px;
+}
 .orange {
   display: none;
   background: whitesmoke;
-  resize: vertical;
   top: 100px;
   left: 200px;
 }
 .purple {
   display: none;
-  background: #77F;
+  background: #99F;
   top: 200px;
   left: 100px;
   height: 500px; width: 450px;
@@ -113,33 +135,20 @@ h1 {
   display: none;
   background: rgb(119, 142, 255);
   top: 100px;
-  left: 200px;
+  right: 200px;
   height: 400px; width: 300px;
 }
 .wwaves {
   display: none;
   background: rgb(140, 140, 140);
   top: 150px;
-  left: 400px;
+  left: 100px;
   height: 500px; width: 700px;
 }
 .wwaves > iframe {
   pointer-events: none;
 }
-/* .jujube {
-  display: none;
-  background: rgb(140, 140, 140);
-  top: 150px;
-  left: 400px;
-  height: 500px; width: 700px;
-}
-.design {
-  display: none;
-  background: rgb(140, 140, 140);
-  top: 150px;
-  left: 400px;
-  height: 500px; width: 700px;
-} */
+
 .windows:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 8px;
@@ -156,12 +165,12 @@ h1 {
   cursor: crosshair;
 }
 
-.resizer.ursw, .resizer.orsw, .resizer.cosw, .resizer.wasw {
+.resizer.jusw, .desw, .insw, .ursw, .resizer.orsw, .resizer.cosw, .resizer.wasw {
   bottom: 8px;
   left: 8px;
   cursor: sw-resize;
 }
-.resizer.urse, .resizer.orse, .resizer.cose, .resizer.wase {
+.resizer.juse, .dese, .inse, .urse, .resizer.orse, .resizer.cose, .resizer.wase {
   bottom: 8px;
   right: 8px;
   cursor: se-resize;
