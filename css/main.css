@@ -17,6 +17,12 @@ iframe {
 img {
   pointer-events: none;
 }
+a {
+  color: #FF0;
+}
+a:hover {
+  color: #A6F;
+}
 
 /* p5JS */
 .p5iframe{
@@ -32,8 +38,11 @@ img {
 }
 
 body {
+  display: flex;
   background: #ddd;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -102,21 +111,43 @@ h1 {
   background: rgb(197, 153, 255);
   top: 50px;
   left: 300px;
-  height: 300px; width: 650px;
+  height: 500px; width: 450px;
 }
 .design {
   display: none;
   background: rgb(253, 255, 137);
   top: 300px;
-  left: 300px;
+  left: 350px;
   height: 500px; width: 450px;
 }
 .intangible {
   display: none;
   background: rgb(255, 153, 240);
   top: 200px;
-  left: 200px;
-  height: 500px; width: 450px;
+  left: 400px;
+  height: 500px; width: 600px;
+}
+.intangible a {
+  font-family: 'Times New Roman', Times, serif;
+}
+.newtablink {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.newtabicon {
+  fill: none;
+  stroke: #FF0;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 17px;
+  width: 2em; height: 2em;
+}
+.newtabicon:hover {
+  stroke: #A5F;
+}
+.intangible .iimg {
+  width: 100%;
 }
 .orange {
   display: none;
